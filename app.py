@@ -60,7 +60,7 @@ class document_liveness_detection:
         st.header("Document Liveness Detection")
         st.markdown("Document Liveness Detection Bad actors present digital images of identification documents instead of “live” IDs in their possession to spoof identity verification processes and commit fraud. ")
         st.markdown("Document liveness detection uses AI and computer vision to distinguish between a present document and a digital image shown on a mobile device or computer display to prevent this type of presentation attack.")
-        uploaded_file = st.file_uploader("Upload your video:")
+        uploaded_file = st.file_uploader("Upload your video or image:")
         st.write("Live or Fake Document?")
         if uploaded_file:
             with open(uploaded_file.name,"wb") as f:
