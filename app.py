@@ -53,7 +53,7 @@ class document_liveness_detection:
     def normalize_img(self,x_image):
         scaler = load("std_scaler.bin")
         x_image_scaled = scaler.transform([x_image])
-        print(x_image_scaled)
+        #print(x_image_scaled)
         return x_image_scaled
 
     def construct_app(self):
